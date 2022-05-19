@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Buat Cicil</title>
+  <!-- Vendor CSS Files -->  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="https://style.sweetstory.repl.co/button.css" rel="stylesheet" type="text/css">
+  <!-- Jquery Min JS Script -->  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <!-- TypeIt JS -->
+  <script src="https://unpkg.com/typeit@8.2.0/dist/index.umd.js"></script>
+
+ <!-- Preloader Script -->  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script type="text/javascript">
+$(window).load(function() {
+    $(".preloader").fadeOut("slow");
+    $('#modal1').modal('show');
+});
+</script>  
+</head>
+
+<body>
+				
+<!-- Preloader -->
+<div class="preloader">
+  <div class="loading">
+    <svg viewBox="25 25 50 50">
+  <circle r="20" cy="50" cx="50"></circle>
+</svg>
+    <p>sabar.. cicil masih loading</p>
+    
+  </div>
+</div>
+
+<div class="background"></div>
+
+<!-- Button trigger modal -->
+<div class="konten" id="content">
+		<div class="klik animated fadeIn slow delay-1s">
+				<p></p>
+ 				<!-- <a class="center" data-bs-toggle="modal" href="#modal1" role="button">
+ 						<button class="btn button-25">Click Me</button>
+ 				</a> -->
+ 		</div>
+</div>
+
+<!-- Modal 1 -->
+<div class="modal animated zoomIn" id="modal1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1"> 
+		<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">						
+								<span type="button" class="close" data-bs-dismiss="modal" aria-label="Close">+</span> 
+						<div class="modal-body"> 						
+								<img src="https://i.postimg.cc/qvD2Zczf/sticker-29.gif" />
+								<h1>Halo cicil ku</h1>
+								<button class="btn button-25" data-bs-target="#modal2" data-bs-toggle="modal">Klik disini</button>
+						</div> 								 
+				</div> 
+		</div> 
+</div> 
+
+<!-- Modal 2 -->
+<div class="modal animated zoomIn" id="modal2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1"> 
+		<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">						
+								<span type="button" class="close" data-bs-dismiss="modal" aria-label="Close">+</span> 
+						<div class="modal-body"> 						
+								<img src="https://i.postimg.cc/7hr3nxbf/sticker-24.gif" />
+								<h1>Selamat Hari Jadian</h1>
+								<p>Semoga cicil gasuka ngambek, gasuka marah, gasuka fitnah yuyud lagi, Yuyud sayang cicil, sehat² ya cicil. Doa terbaik dari yuyud buat cicil ku</p>
+								<button class="btn button-25" data-bs-target="#modal3" data-bs-toggle="modal">Klik ini</button>	
+						</div> 								 
+				</div> 
+		</div> 
+</div> 
+
+<!-- Modal 3 -->
+<div class="modal animated zoomIn" id="modal3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1"> 
+		<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">						
+								<span type="button" class="close" data-bs-dismiss="modal" aria-label="Close">+</span> 
+						<div class="modal-body"> 						
+								<img src="https://i.postimg.cc/tTxd61qK/sticker-23.gif" />
+								<h1>Cicil mau kado nggak nih ?</h1>
+								<p></p>
+								<div class="buttoninline">
+								<div id="pindah" class="no button-25" onclick="moveElement1();">Mau</div>
+								<script>
+		function moveElement1() { const pindah1 = document.getElementById('pindah'); pindah1.style.top = `${Math.random() * 200}px`; pindah1.style.right = `${Math.random() * 200}px`;
+pindah1.style.bottom = `${Math.random() * 200}px`; pindah1.style.left = `${Math.random() * 200}px`; }
+</script>
+								<a class="yes button-25" data-bs-target="#modal4" data-bs-toggle="modal">Nggak</a>				
+								</div>				
+						</div> 								 
+				</div> 
+		</div> 
+</div> 
+
+<!-- Modal 4 -->
+<div class="modal animated zoomIn" id="modal4" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1"> 
+		<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">						
+								<span type="button" class="close" data-bs-dismiss="modal" aria-label="Close">+</span> 
+						<div class="modal-body"> 						
+								<img src="https://i.postimg.cc/K8f0cgjQ/sticker-12.gif" />
+								<h1>Hahah.. yaudah kalo cicil nggak mau kado? 😝</h1>
+								<button class="btn button-25" data-bs-target="#modal5" data-bs-toggle="modal">Next</button>				
+						</div> 								 
+				</div> 
+		</div> 
+</div> 
+
+<!-- Modal 5 -->
+<div class="modal animated zoomIn" id="modal5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1"> 
+		<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">						
+								<span type="button" class="close" data-bs-dismiss="modal" aria-label="Close">+</span> 
+						<div class="modal-body"> 						
+								<img src="https://i.postimg.cc/vZbPdvYc/sticker-13.gif" />
+								<h1>Canda cicil🤣 mau coklat apa pocky?</h1>	
+								<p>Jawabannya kirim ke Wa yuyud ya</p>
+						  <div class="col">
+								    <a href="https://wa.me/6281555745357?text=Cicil%20mau%20pocky%20yuyud🥺" class="btn button-25">Pocky</a>
+								  </div>
+								  <div class="col">
+								    <a href="https://wa.me/6281555745357?text=Cicil%20mau%20coklat%20yuyud🥺" class="btn button-25">Coklat</a>
+								  </div>
+								</div>				
+						</div> 								 
+				</div> 
+		</div> 
+</div> 
+<script>
+		function moveElement2() { const pindah2 = document.getElementById('pindah2'); pindah2.style.top = `${Math.random() * 200}px`; pindah2.style.right = `${Math.random() * 200}px`;
+pindah2.style.bottom = `${Math.random() * 200}px`; pindah2.style.left = `${Math.random() * 200}px`; }
+</script>
+
+  				<!-------- ADDITIONAL JAVASCRIPT -------->
+<!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+				AOS.init({
+  duration: 400,
+  delay: 100,
+})
+  </script>
+		
+<!-- Music Player -->
+		<script type="text/javascript">
+function toggleSound() {
+  var audioElem = document.getElementById('audio');
+  if (audioElem.paused)
+    audioElem.play();
+  else
+    audioElem.pause();
+}
+		</script>
+</body
+</html>
